@@ -1,5 +1,3 @@
-import time
-
 from pages.tensor_page import FirstScenarioPage, SecondScenarioPage, ThirdScenarioPage
 
 
