@@ -34,6 +34,6 @@ class TestThirdScenario:
         third_scenario_page.go_to_page()
         third_scenario_page.download_installer()
         check_file, file_size_mb, expected_file_size_mb = third_scenario_page.check_installer()
-        assert check_file == True, "Ошибка при скачивании плагина"
+        assert check_file is True, "Ошибка при скачивании плагина"
         assert file_size_mb == expected_file_size_mb, "Размер скачанного файла не соответствует ожидаемому размеру"
         third_scenario_page.remove_installer()

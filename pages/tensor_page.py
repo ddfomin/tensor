@@ -82,7 +82,7 @@ class ThirdScenarioPage(BasePage):
         check_file = os.path.exists(downloaded_file_path)
         file_size_bytes = os.path.getsize(downloaded_file_path)
         file_size_mb = round(file_size_bytes / (1024 * 1024), 2)
-        expected_file_size_mb = 7.21
+        expected_file_size_mb = 7.22
         return check_file, file_size_mb, expected_file_size_mb
 
     def remove_installer(self):
